@@ -1,0 +1,39 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+=== P1B: Downloading OSM road/path network ===
+Querying Overpass API for road/path network...
+  highway types: path, footway, track, unclassified, tertiary, secondary, primary
+
+Roads/paths saved:
+  Total features : 4440
+  Pedestrian     : 1196
+  By type:
+     road_type    n
+1 unclassified 1252
+2      primary  782
+3        track  727
+4    secondary  647
+5     tertiary  563
+6      footway  411
+7         path   58
+  CRS    : 32636
+  Output : data/raw/roads/paths_osm.gpkg
+
+=== P1B: Roads complete ===
+
+Warning messages:
+1: package 'osmdata' was built under R version 4.4.3 
+2: package 'sf' was built under R version 4.4.3 
+3: package 'dplyr' was built under R version 4.4.3 

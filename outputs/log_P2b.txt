@@ -1,0 +1,62 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+terra 1.8.29
+Warning message:
+package 'terra' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+Warning message:
+package 'whitebox' was built under R version 4.4.3 
+=== P2: Generating river crossing points ===
+
+[Step 1/4] Conditioning DEM (filling sinks)...
+[Step 1/4] Computing D8 flow direction...
+[Step 1/4] Computing flow accumulation...
+[Step 1/4] Extracting stream network (threshold = 500 cells)...
+
+[Step 2/4] Loading OSM layers...
+Warning message:
+In st_cast.sf(sf::st_transform(sf::st_read(here(PATH_ROADS_OSM),  :
+  repeating attributes for all sub-geometries for which they may not be constant
+  Rivers: 193 features
+  Roads : 4461 features
+
+[Step 3/4] Finding river × road intersections...
+Warning message:
+In st_cast.MULTIPOINT(X[[i]], ...) : point from first coordinate only
+  Raw intersections: 124
+
+[Step 4/4] Cleaning and attributing crossings...
+[build log] data/processed/crossings/crossings.gpkg (124 rows)
+
+Crossing generation complete:
+  Total crossings       : 124
+  Pedestrian crossings  : 19
+  Road crossings        : 105
+  Elevation range       : Inf – -Inf m
+  Output                : data/processed/crossings/crossings.gpkg
+Warning messages:
+1: In min(crossings_dedup$elev_m, na.rm = TRUE) :
+  no non-missing arguments to min; returning Inf
+2: In max(crossings_dedup$elev_m, na.rm = TRUE) :
+  no non-missing arguments to max; returning -Inf
+
+=== P2 complete. Phase 3A and 3B can now run in parallel. ===
+

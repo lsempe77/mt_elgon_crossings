@@ -5,9 +5,12 @@
 .Ruserdata
 *.Rproj
 
-# Large data files
+# Large raw data files (rasters, HDF5, tiles, etc.)
+data/raw/
 
-# Outputs (optional - remove if you want to track these)
+# Large processed hydro rasters (>100MB, exceeds GitHub limit)
+data/processed/hydro/dem_filled.tif
+data/processed/hydro/flow_acc.tif
 
 # OS files
 .DS_Store

@@ -1,0 +1,43 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+terra 1.8.29
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+=== P3A: Extracting hydrological covariates ===
+Processing 124 crossings...
+
+[Step 1/5] Computing slope at crossings...
+[Step 2/5] Extracting flow accumulation → catchment area...
+[Step 3/5] Computing Strahler stream order...
+[Step 4/5] Extracting mean annual precipitation...
+[Step 5/5] Estimating flood frequency (Q10, Q50)...
+[build log] outputs/covariates/hydro_covariates.csv (124 rows)
+
+Hydro covariates summary:
+  slope_deg          : 3.5 ± 4.1 (mean ± SD)
+  catchment_area_km2 : 0.7 (median), range 0–6043
+  stream_order       : 1, 2, 3, 4, 6
+  flood_Q50 (m³/s)   : 17.1 (median)
+  NAs in slope       : 6
+  Output             : outputs/covariates/hydro_covariates.csv
+
+=== P3A complete ===
+
+Warning messages:
+1: package 'sf' was built under R version 4.4.3 
+2: package 'terra' was built under R version 4.4.3 
+3: package 'dplyr' was built under R version 4.4.3 
+4: package 'whitebox' was built under R version 4.4.3 

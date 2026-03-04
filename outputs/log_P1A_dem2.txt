@@ -1,0 +1,48 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Loading required package: terra
+terra 1.8.29
+Warning messages:
+1: package 'geodata' was built under R version 4.4.3 
+2: package 'terra' was built under R version 4.4.3 
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+=== P1A: Downloading DEM ===
+Downloading SRTM tiles...
+trying URL 'https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_43_12.zip'
+Content type 'application/zip' length 31951602 bytes (30.5 MB)
+==================================================
+downloaded 30.5 MB
+
+trying URL 'https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_44_12.zip'
+Content type 'application/zip' length 32446289 bytes (30.9 MB)
+==================================================
+downloaded 30.9 MB
+
+Mosaicking 2 tile(s)...
+|---------|---------|---------|---------|=========================================                                          
+DEM saved:
+  Resolution : 92 x 92 m (approx)
+  Extent     : 33.55, 35.45, 0.17, 2.23
+  CRS        : NA
+  Output     : data/raw/dem/dem_mt_elgon.tif
+
+=== P1A: DEM complete ===
+

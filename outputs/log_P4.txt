@@ -1,0 +1,67 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading required package: spData
+To access larger datasets in this package, install the spDataLarge
+package with: `install.packages('spDataLarge',
+repos='https://nowosad.github.io/drat/', type='source')`
+terra 1.8.29
+
+Attaching package: 'terra'
+
+The following object is masked from 'package:patchwork':
+
+    area
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+=== P4: Orthogonality tests ===
+
+[Step 1/5] Building analysis dataset...
+[build log] outputs/analysis/analysis_dataset.csv (124 rows)
+  Rows in analysis dataset: 124
+  Complete cases: 6
+
+[Step 2/5] Computing PCA difficulty index...
+  PC1 explains 79% of difficulty variance
+  Loadings: slope_deg=0.44, log_catchment=-0.55, stream_order=-0.46, log_flood_Q50=-0.54
+
+[Step 3/5] Running bivariate regressions (Test A)...
+[Step 3/5] Running geography-conditional regressions (Test B)...
+
+[Step 4/5] Spatial autocorrelation tests (Test D)...
+  Moran I [ntl_bivariate]: I=-0.200, p=0.5000
+
+[Step 5/5] Saving results and figures...
+`geom_smooth()` using formula = 'y ~ x'
+`geom_smooth()` using formula = 'y ~ x'
+
+===== ORTHOGONALITY TEST RESULTS =====
+
+  Bivariate: difficulty index significant for 0/5 outcomes
+  Conditional: difficulty index significant for 0/5 outcomes (after geo controls)
+
+  INTERPRETATION:
+  - 0/5 significant (conditional): STRONG support for orthogonality
+  - 1-2/5 significant (conditional): MODERATE — condition on geography in IV first stage
+  - 3+/5 significant (conditional): WEAK — exclusion restriction under pressure
+
+  Figures saved to: outputs/report/
+  Full results:     outputs/analysis/orthogonality_results.rds
+========================================
+
+=== P4 complete ===
+
+There were 12 warnings (use warnings() to see them)

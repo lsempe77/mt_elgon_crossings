@@ -1,0 +1,41 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Loading required package: terra
+terra 1.8.29
+Warning messages:
+1: package 'geodata' was built under R version 4.4.3 
+2: package 'terra' was built under R version 4.4.3 
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+=== P1A: Downloading DEM ===
+Downloading SRTM tiles...
+trying URL 'https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_43_13.zip'
+Content type 'application/zip' length 25944992 bytes (24.7 MB)
+==================================================
+downloaded 24.7 MB
+
+trying URL 'https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_44_13.zip'
+Content type 'application/zip' length 35848190 bytes (34.2 MB)
+==================================================
+downloaded 34.2 MB
+
+Mosaicking 2 tile(s)...
+|---------|---------|---------|---------|=========================================                                          Error: [crop] extents do not overlap
+Execution halted

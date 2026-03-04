@@ -1,0 +1,75 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+terra 1.8.29
+Warning message:
+package 'terra' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+Warning message:
+package 'purrr' was built under R version 4.4.3 
+=== P3B: Extracting socioeconomic outcome proxies ===
+Processing 124 crossings...
+Pre-computing buffers...
+
+[Step 1/5] Nighttime lights (2014 baseline)...
+  Extracting: NTL 500m...
+  Extracting: NTL 2km...
+
+[Step 2/5] Population density...
+
+[Step 3/5] Road density within 2km buffer...
+  (This may take 10–20 minutes for large crossing sets)
+    ... 100/124
+
+[Step 4/5] Travel time to city...
+  Extracting: travel time (point)...
+
+[Step 5/5] Agricultural suitability...
+  Extracting: agri suitability 2km...
+  Extracting: agri suitability 500m...
+
+Assembling output...
+Error in `dplyr::bind_rows()`:
+! Can't combine `..1$timestamp` <datetime<UTC>> and `..2$timestamp` <character>.
+Backtrace:
+     ▆
+  1. ├─global write_socio_outcomes(socio_out, script = "P3B_socioec_outcomes.R")
+  2. │ └─global .log_write(script, PATH_SOCIO_COV, nrow(df))
+  3. │   ├─readr::write_csv(dplyr::bind_rows(existing, entry), log_path)
+  4. │   │ └─readr::write_delim(...)
+  5. │   │   ├─base::stopifnot(is.data.frame(x))
+  6. │   │   └─base::is.data.frame(x)
+  7. │   └─dplyr::bind_rows(existing, entry)
+  8. │     └─vctrs::vec_rbind(!!!dots, .names_to = .id, .error_call = current_env())
+  9. ├─vctrs (local) `<fn>`()
+ 10. │ └─vctrs::vec_default_ptype2(...)
+ 11. │   └─vctrs:::vec_ptype2_df_fallback(...)
+ 12. │     └─vctrs:::vec_ptype2_params(...)
+ 13. │       └─vctrs:::vec_ptype2_opts(...)
+ 14. └─vctrs (local) `<fn>`()
+ 15.   └─vctrs::vec_default_ptype2(...)
+ 16.     ├─base::withRestarts(...)
+ 17.     │ └─base (local) withOneRestart(expr, restarts[[1L]])
+ 18.     │   └─base (local) doWithOneRestart(return(expr), restart)
+ 19.     └─vctrs::stop_incompatible_type(...)
+ 20.       └─vctrs:::stop_incompatible(...)
+ 21.         └─vctrs:::stop_vctrs(...)
+ 22.           └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = call)
+Execution halted

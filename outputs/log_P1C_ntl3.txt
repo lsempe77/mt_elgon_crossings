@@ -1,0 +1,31 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+terra 1.8.29
+Warning message:
+package 'terra' was built under R version 4.4.3 
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+Warning message:
+package 'httr2' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+=== P1C: Downloading nighttime lights ===
+Listing LAADS DAAC directory: https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5000/VNP46A4/2014/001/
+Error: [P1C] Could not find VNP46A4 file for tile h21v08 in LAADS directory.
+Check year/DOY/tile.
+Execution halted

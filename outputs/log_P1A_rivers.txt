@@ -1,0 +1,32 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright
+Warning message:
+package 'osmdata' was built under R version 4.4.3 
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+=== P1A: Downloading OSM waterways ===
+Querying Overpass API for waterways...
+  bbox: 0.17, 33.55, 2.23, 35.45
+
+Waterways saved:
+  Features   : 193
+  Types      : canal, drain, river, stream
+  CRS        : 4326
+  Output     : data/raw/rivers/rivers_osm.gpkg
+
+=== P1A: Rivers complete ===
+

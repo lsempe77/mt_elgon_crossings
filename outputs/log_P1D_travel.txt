@@ -1,0 +1,209 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Loading required package: ggplot2
+Registered S3 method overwritten by 'malariaAtlas':
+  method           from   
+  autoplot.default ggplot2
+Warning messages:
+1: package 'malariaAtlas' was built under R version 4.4.3 
+2: package 'ggplot2' was built under R version 4.4.3 
+terra 1.8.29
+Warning message:
+package 'terra' was built under R version 4.4.3 
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+=== P1D: Downloading travel time to cities ===
+Querying Malaria Atlas Project raster catalogue...
+Downloading list of available rasters...
+Loading ISO 19139 XML schemas...
+Loading ISO 19115-3 XML schemas...
+Loading ISO 19139 codelists...
+Rasters Available for Download: 
+ Malaria__202206_Global_Pf_Mortality_Count 
+ Malaria__202406_Global_Pf_Mortality_Count 
+ Malaria__202508_Global_Pf_Mortality_Count 
+ Malaria__202206_Global_Pf_Mortality_Rate 
+ Malaria__202406_Global_Pf_Mortality_Rate 
+ Malaria__202508_Global_Pf_Mortality_Rate 
+ Malaria__202206_Global_Pf_Incidence_Rate 
+ Malaria__202406_Global_Pf_Incidence_Rate 
+ Malaria__202508_Global_Pf_Incidence_Rate 
+ Malaria__202206_Global_Pf_Incidence_Count 
+ Malaria__202406_Global_Pf_Incidence_Count 
+ Malaria__202508_Global_Pf_Incidence_Count 
+ Malaria__202206_Global_Pv_Incidence_Rate 
+ Malaria__202406_Global_Pv_Incidence_Rate 
+ Malaria__202508_Global_Pv_Incidence_Rate 
+ Malaria__202206_Global_Pv_Incidence_Count 
+ Malaria__202406_Global_Pv_Incidence_Count 
+ Malaria__202508_Global_Pv_Incidence_Count 
+ Malaria__202206_Global_Pf_Parasite_Rate 
+ Malaria__202406_Global_Pf_Parasite_Rate 
+ Malaria__202508_Global_Pf_Parasite_Rate 
+ Malaria__202206_Global_Pv_Parasite_Rate 
+ Malaria__202406_Global_Pv_Parasite_Rate 
+ Malaria__202508_Global_Pv_Parasite_Rate 
+ Malaria__202202_Global_Pf_Reproductive_Number 
+ Interventions__202106_Global_Antimalarial_Effective_Treatment 
+ Interventions__202406_Global_Antimalarial_Effective_Treatment 
+ Interventions__202508_Global_Antimalarial_Effective_Treatment 
+ Interventions__202106_Africa_Insecticide_Treated_Net_Use_Rate 
+ Interventions__202406_Africa_Insecticide_Treated_Net_Use_Rate 
+ Interventions__202508_Africa_Insecticide_Treated_Net_Use_Rate 
+ Interventions__202106_Africa_Insecticide_Treated_Net_Access 
+ Interventions__202406_Africa_Insecticide_Treated_Net_Access 
+ Interventions__202508_Africa_Insecticide_Treated_Net_Access 
+ Interventions__202106_Africa_IRS_Coverage 
+ Interventions__202508_Africa_IRS_Coverage 
+ Interventions__202106_Africa_Insecticide_Treated_Net_Use 
+ Interventions__202406_Africa_Insecticide_Treated_Net_Use 
+ Interventions__202508_Africa_Insecticide_Treated_Net_Use 
+ Blood_Disorders__201201_Global_Duffy_Negativity_Phenotype_Frequency 
+ Blood_Disorders__201201_Global_G6PDd_Allele_Frequency 
+ Blood_Disorders__201201_Africa_HbC_Allele_Frequency 
+ Blood_Disorders__201201_Global_Sickle_Haemoglobin_HbS_Allele_Frequency 
+ Accessibility__202001_Global_Motorized_Friction_Surface 
+ Accessibility__202001_Global_Walking_Only_Friction_Surface 
+ Accessibility__201501_Global_Travel_Speed_Friction_Surface 
+ Accessibility__201501_Global_Travel_Time_to_Cities 
+ Accessibility__202001_Global_Motorized_Travel_Time_to_Healthcare 
+ Accessibility__202001_Global_Walking_Only_Travel_Time_To_Healthcare 
+ Explorer__2010_Anopheles_aconitus 
+ Explorer__2010_Anopheles_albimanus 
+ Explorer__2010_Anopheles_albitarsis 
+ Explorer__2010_Anopheles_annularis 
+ Explorer__2010_Anopheles_aquasalis 
+ Explorer__2010_Anopheles_arabiensis 
+ Explorer__2010_Anopheles_atroparvus 
+ Explorer__2010_Anopheles_balabacensis 
+ Explorer__2017_Anopheles_coluzzii.Mean_Decompressed 
+ Explorer__2010_Anopheles_culicifacies 
+ Explorer__2010_Anopheles_darlingi 
+ Explorer__2010_Anopheles_dirus_complex 
+ Explorer__2016_Anopheles_dirus 
+ Explorer__2010_Anopheles_farauti 
+ Explorer__2010_Anopheles_flavirostris 
+ Explorer__2010_Anopheles_fluviatilis 
+ Explorer__2010_Anopheles_freeborni 
+ Explorer__2010_Anopheles_funestus 
+ Explorer__2017_Anopheles_funestus_group.Mean_Decompressed 
+ Explorer__2017_Anopheles_funestus_subgroup.Mean_Decompressed 
+ Explorer__2017_Anophele_funestus.Mean_Decompressed 
+ Explorer__2017_Anopheles_gambiae.Mean_Decompressed 
+ Explorer__2017_Anopheles_gambiae_complex.Mean_Decompressed 
+ Explorer__2010_Anopheles_gambiae_ss 
+ Explorer__2010_Anopheles_koliensis 
+ Explorer__2010_Anopheles_labranchiae 
+ Explorer__2010_Anopheles_lesteri 
+ Explorer__2010_Anopheles_leuco_latens 
+ Explorer__2016_Anopheles_leucosphyrus_complex 
+ Explorer__2016_Anopheles_leucosphyrus_group 
+ Explorer__2010_Anopheles_maculatus 
+ Explorer__2010_Anopheles_marajoara 
+ Explorer__2010_Anopheles_melas 
+ Explorer__2017_Anopheles_merus.Mean_Decompressed 
+ Explorer__2010_Anopheles_merus 
+ Explorer__2010_Anopheles_messeae 
+ Explorer__2010_Anopheles_minimus 
+ Explorer__2010_Anopheles_moucheti 
+ Explorer__2010_Anopheles_nili 
+ Explorer__2010_Anopheles_nuneztovari 
+ Explorer__2010_Anopheles_pseudopuncti 
+ Explorer__2010_Anopheles_punctulatus 
+ Explorer__2010_Anopheles_quadrimacul 
+ Explorer__2010_Anopheles_sacharovi 
+ Explorer__2010_Anopheles_sergentii 
+ Explorer__2010_Anopheles_sinensis 
+ Explorer__2010_Anopheles_stephensi 
+ Explorer__2010_Anopheles_subpictus 
+ Explorer__2010_Anopheles_sundaicus 
+ Explorer__2010_Anopheles_superpictus 
+ Explorer__2016_Macaca_fascicularis 
+ Explorer__2016_Macaca_leonina 
+ Explorer__2016_Macaca_nemestrina 
+ Explorer__2019_Global_Pf_Incidence 
+ Explorer__2020_Global_Pf_Incidence 
+ Explorer__2015_Nature_Africa_Incidence 
+ Explorer__2020_Global_Pf_Mortality_Rate 
+ Explorer__2019_Global_Pf_Mortality_Rate 
+ Explorer__2020_Global_PfPR 
+ Explorer__2019_Global_PfPR 
+ Explorer__2015_Nature_Africa_PR 
+ Explorer__2020_Global_Pf_Reproductive_Number 
+ Explorer__2010_Pf_Limits_Decompressed 
+ Explorer__2010_TempSuitability.Pf.AnnualInfectiousDays.1k.global_Decompressed 
+ Explorer__2010_TempSuitability.Pf.Index.1k.global_Decompressed 
+ Explorer__2016_Pk_SEAsia_masked 
+ Explorer__2020_Global_Pv_Cases 
+ Explorer__2019_Global_Pv_Cases 
+ Explorer__2020_Global_Pv_Incidence 
+ Explorer__2019_Global_Pv_Incidence 
+ Explorer__2020_Global_PvPR 
+ Explorer__2019_Global_PvPR 
+ Explorer__2013_Pv_Relapse_Incidence_Decompressed 
+ Explorer__2010_Pv_limits_5k_Decompressed 
+ Explorer__2010_TempSuitability.Pv.AnnualInfectiousDays.1k.global_Decompressed 
+ Explorer__2010_TempSuitability.Pv.Index.1k.global_Decompressed 
+ Explorer__2015_friction_surface_v1_Decompressed 
+ Explorer__2015_accessibility_to_cities_v1.0 
+ Explorer__2017_All_Cause_Fever 
+ Explorer__2015_Nature_Africa_ACT 
+ Explorer__2010_Dominant_Vector_Species_Global_5k 
+ Explorer__2011_Duffy_Negativity_Phenotype_Frequency_5k_Decompressed 
+ Explorer__2020_Global_AM_Effective_Treatment 
+ Explorer__2012_G6PDd_Allele_Frequency_Global_5k_Decompressed 
+ Explorer__2020_motorized_friction_surface 
+ Explorer__2020_walking_only_friction_surface 
+ Explorer__2020_motorized_travel_time_to_healthcare 
+ Explorer__2013_HbC_Allele_Freq_Africa_5k 
+ Explorer__2013_Sickle_Haemoglobin_HbS_Allele_Freq_Global_5k_Decompressed 
+ Explorer__2020_Africa_IRS_Coverage 
+ Explorer__2015_Nature_Africa_IRS 
+ Explorer__2020_Africa_ITN_Use 
+ Explorer__2015_Nature_Africa_ITN 
+ Explorer__2017_Malaria_Attributable_Prop_All_Fever 
+ Explorer__2017_Malaria_Attributable_Prop_Malaria_Positive 
+ Explorer__2017_Malaria_Positive_Prop_All_Fever 
+ Explorer__2017_Non_Malarial_Fever 
+ Explorer__2019_Nature_Africa_Housing_2000 
+ Explorer__2019_Nature_Africa_Housing_2015 
+ Explorer__2010_Secondary-Dominant_Vector_Species_Africa 
+ Explorer__2020_walking_only_travel_time_to_healthcare
+Downloading travel time raster...
+Checking if the following Surface-Year combinations are available to download:
+
+    DATASET ID  YEAR 
+  - Explorer__2015_accessibility_to_cities_v1.0:  DEFAULT 
+
+No encoding supplied: defaulting to UTF-8.
+<GMLEnvelope>
+....|-- lowerCorner: 0.173839415018081 33.57521170467
+....|-- upperCorner: 2.22615757087451 35.4246204667793Warning message:
+The `surface` argument of `getRaster()` is deprecated as of malariaAtlas 1.6.0.
+ℹ The argument 'surface' has been deprecated. It will be removed in the next
+  version. Please use dataset_id to specify the raster instead. 
+
+Travel time raster saved:
+  Min / Median / Max : 0 / 81 / 528 minutes
+  Resolution         : 925 x 925 m (approx)
+  Output             : data/raw/travel_time/accessibility_2015.tif
+
+=== P1D: Travel time complete ===
+

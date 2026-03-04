@@ -1,0 +1,61 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+terra 1.8.29
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+=== P3B: Extracting socioeconomic outcome proxies ===
+Processing 124 crossings...
+Pre-computing buffers...
+
+[Step 1/5] Nighttime lights (2014 baseline)...
+  Extracting: NTL 500m...
+  Extracting: NTL 2km...
+
+[Step 2/5] Population density...
+
+[Step 3/5] Road density within 2km buffer...
+  (This may take 10–20 minutes for large crossing sets)
+    ... 100/124
+
+[Step 4/5] Travel time to city...
+  Extracting: travel time (point)...
+
+[Step 5/5] Agricultural suitability...
+  Extracting: agri suitability 2km...
+  Extracting: agri suitability 500m...
+
+Assembling output...
+[build log] outputs/covariates/socioeconomic_outcomes.csv (124 rows)
+
+Socioeconomic outcomes summary:
+  ntl_2km (mean)       : 0.015 nW/cm²/sr
+  pop_2km (median)     : 222 persons/km²
+  travel_time (median) : 58 minutes
+  road_dens (median)   : 0.96 km/km²
+  agri_suit (mean)     : 90.7
+  NAs per column:
+       ntl_500m         ntl_2km      ntl_cv_2km        pop_500m         pop_2km 
+              5               2               2               5               2 
+  pop_total_2km travel_time_min  agri_suit_500m   agri_suit_2km 
+              2              12               5               2 
+
+=== P3B complete ===
+
+Warning messages:
+1: package 'sf' was built under R version 4.4.3 
+2: package 'terra' was built under R version 4.4.3 
+3: package 'dplyr' was built under R version 4.4.3 
+4: package 'purrr' was built under R version 4.4.3 

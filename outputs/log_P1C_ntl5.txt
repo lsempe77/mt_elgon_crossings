@@ -1,0 +1,45 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+terra 1.8.29
+Warning message:
+package 'terra' was built under R version 4.4.3 
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+Warning message:
+package 'httr2' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+=== P1C: Downloading nighttime lights ===
+Searching NASA CMR for VNP46A4 granules...
+  URL: https://cmr.earthdata.nasa.gov/search/granules.json?short_name=VNP46A4&bounding_box=33.8,0.4,35.2,2&temporal=2014-01-01T00:00:00Z,2014-12-31T23:59:59Z&page_size=20
+Found 4 granule(s). Looking for tile h21v08...
+  File: VNP46A4.A2013001.h21v08.001.2021118153512.h5
+  URL : https://data.laadsdaac.earthdatacloud.nasa.gov/prod-lads/VNP46A4/VNP46A4.A2013001.h21v08.001.2021118153512.h5
+HDF5 file already exists: C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings/data/raw/ntl/h5/VNP46A4.A2013001.h21v08.001.2021118153512.h5 (15 MB)
+Reading HDF5 with GDAL subdataset syntax...
+  Reading subdataset: AllAngle_Composite_Snow_Free
+Reprojecting to WGS84 and cropping to AOI...
+
+NTL saved:
+  Year       : 2014
+  Min / Max  : 0 / 27.9 nW/cm²/sr
+  Resolution : 462 x 462 m (approx)
+  Output     : data/raw/ntl/ntl_2014.tif
+
+=== P1C: NTL complete ===
+

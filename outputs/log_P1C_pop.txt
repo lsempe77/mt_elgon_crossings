@@ -1,0 +1,41 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Loading required package: terra
+terra 1.8.29
+Warning messages:
+1: package 'geodata' was built under R version 4.4.3 
+2: package 'terra' was built under R version 4.4.3 
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+=== P1C: Downloading WorldPop population ===
+Downloading WorldPop 2015 for Uganda...
+trying URL 'https://geodata.ucdavis.edu/geodata/pop/gpw_v4_population_density_rev11_2015_30s.tif'
+Content type 'image/tiff' length 199822092 bytes (190.6 MB)
+==================================================
+downloaded 190.6 MB
+
+
+Population raster saved:
+  Total pop in AOI : ~16,459,308
+  Resolution       : 925 x 925 m (approx)
+  Output           : data/raw/population/worldpop_mt_elgon.tif
+
+=== P1C: Population complete ===
+

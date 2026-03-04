@@ -1,0 +1,81 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+terra 1.8.29
+Warning message:
+package 'terra' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+Warning message:
+package 'whitebox' was built under R version 4.4.3 
+=== P2: Generating river crossing points ===
+[P2] WhiteboxTools not found. Installing...
+Performing one-time download of WhiteboxTools binary from
+	 https://www.whiteboxgeo.com/WBT_Windows/WhiteboxTools_win_amd64.zip 
+(This could take a few minutes, please be patient...)
+trying URL 'https://www.whiteboxgeo.com/WBT_Windows/WhiteboxTools_win_amd64.zip'
+Content type 'application/zip' length 25512901 bytes (24.3 MB)
+==================================================
+downloaded 24.3 MB
+
+WhiteboxTools binary is located here:  C:/Users/LucasSempe/AppData/Roaming/R/data/R/whitebox/WBT/whitebox_tools.exe 
+You can now start using whitebox
+    library(whitebox)
+    wbt_version()
+
+[Step 1/4] Conditioning DEM (filling sinks)...
+[Step 1/4] Computing D8 flow direction...
+[Step 1/4] Computing flow accumulation...
+[Step 1/4] Extracting stream network (threshold = 500 cells)...
+
+[Step 2/4] Loading OSM layers...
+Warning message:
+In st_cast.sf(sf::st_transform(sf::st_read(here(PATH_ROADS_OSM),  :
+  repeating attributes for all sub-geometries for which they may not be constant
+  Rivers: 193 features
+  Roads : 4461 features
+
+[Step 3/4] Finding river × road intersections...
+Error in `stopifnot()`:
+ℹ In argument: `!sf::st_is_empty(geometry)`.
+Caused by error:
+! object 'geometry' not found
+Backtrace:
+     ▆
+  1. ├─dplyr::filter(...)
+  2. ├─sf:::filter.sf(...)
+  3. │ └─sf:::.re_sf(...)
+  4. │   └─base::stopifnot(...)
+  5. ├─base::NextMethod()
+  6. ├─dplyr:::filter.data.frame(...)
+  7. │ └─dplyr:::filter_impl(...)
+  8. │   └─dplyr:::filter_rows(...)
+  9. │     └─dplyr:::filter_eval(...)
+ 10. │       ├─base::withCallingHandlers(...)
+ 11. │       └─mask$eval_all_filter(dots_expanded, invert, env_filter)
+ 12. │         └─dplyr (local) eval()
+ 13. ├─sf::st_is_empty(geometry)
+ 14. │ ├─sf:::sfc_is_empty(st_geometry(x))
+ 15. │ └─sf::st_geometry(x)
+ 16. └─base::.handleSimpleError(...)
+ 17.   └─dplyr (local) h(simpleError(msg, call))
+ 18.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+Warning message:
+In st_cast.MULTIPOINT(X[[i]], ...) : point from first coordinate only
+Execution halted

@@ -1,0 +1,35 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Warning message:
+package 'blackmarbler' was built under R version 4.4.3 
+terra 1.8.29
+Warning message:
+package 'terra' was built under R version 4.4.3 
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+Warning message:
+package 'sf' was built under R version 4.4.3 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.4.3 
+=== P1C: Downloading nighttime lights ===
+Downloading VIIRS VNP46A4 for year 2014...
+Processing 1 nighttime light tiles
+Processing: VNP46A4.A2014001.h21v08.002.2025090174909.h5
+Error: [P1C] blackmarbler download failed: [rast] cannot open this file as a SpatRaster: C:\Users\LUCASS~1\AppData\Local\Temp\RtmpSEKIod/bm_raster_temp_177218703966215/VNP46A4.A2014001.h21v08.002.2025090174909.h5
+Check token validity and internet connection.
+In addition: Warning message:
+`C:\Users\LUCASS~1\AppData\Local\Temp\RtmpSEKIod/bm_raster_temp_177218703966215/VNP46A4.A2014001.h21v08.002.2025090174909.h5' not recognized as being in a supported file format. (GDAL error 4) 
+Execution halted

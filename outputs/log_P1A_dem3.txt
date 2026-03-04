@@ -1,0 +1,36 @@
+here() starts at C:/Users/LucasSempe/OneDrive - International Initiative for Impact Evaluation/Desktop/Fika/mt_elgon_crossings
+Loading required package: terra
+terra 1.8.29
+Linking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:terra':
+
+    intersect, union
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+=== P1A: Downloading DEM ===
+Downloading SRTM tiles...
+Mosaicking 2 tile(s)...
+|---------|---------|---------|---------|=========================================                                          
+DEM saved:
+  Resolution : 92 x 92 m (approx)
+  Extent     : 33.55, 35.45, 0.17, 2.23
+  CRS        : NA
+  Output     : data/raw/dem/dem_mt_elgon.tif
+
+=== P1A: DEM complete ===
+
+Warning messages:
+1: package 'geodata' was built under R version 4.4.3 
+2: package 'terra' was built under R version 4.4.3 
+3: package 'sf' was built under R version 4.4.3 
+4: package 'dplyr' was built under R version 4.4.3 

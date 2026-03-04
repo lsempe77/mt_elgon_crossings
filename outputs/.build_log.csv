@@ -1,0 +1,21 @@
+timestamp,script,output,nrow
+2026-02-27 10:23:35,P2_generate_crossings.R,data/processed/crossings/crossings.gpkg,124
+2026-02-27 10:35:08,P3B_socioec_outcomes.R,outputs/covariates/socioeconomic_outcomes.csv,124
+2026-02-27 10:35:41,P3A_hydro_covariates.R,outputs/covariates/hydro_covariates.csv,124
+2026-02-27 15:46:37,P2_generate_crossings.R,data/processed/crossings/crossings.gpkg,124
+2026-02-27 15:47:38,P3A_hydro_covariates.R,outputs/covariates/hydro_covariates.csv,124
+2026-02-27 15:47:44,P3B_socioec_outcomes.R,outputs/covariates/socioeconomic_outcomes.csv,124
+2026-02-27 15:52:03,P4_orthogonality_tests.R,outputs/analysis/analysis_dataset.csv,124
+2026-02-27 15:52:38,P4_orthogonality_tests.R,outputs/analysis/analysis_dataset.csv,124
+2026-02-27 15:57:01,P3A_hydro_covariates.R,outputs/covariates/hydro_covariates.csv,124
+2026-02-27 15:59:01,P4_orthogonality_tests.R,outputs/analysis/analysis_dataset.csv,124
+2026-02-27 18:03:07,P3B_socioec_outcomes.R,outputs/covariates/socioeconomic_outcomes.csv,124
+2026-02-27 19:04:19,P3B_socioec_outcomes.R,outputs/covariates/socioeconomic_outcomes.csv,124
+2026-02-27 19:08:19,P3B_socioec_outcomes.R,outputs/covariates/socioeconomic_outcomes.csv,124
+2026-02-27 19:09:37,P4_orthogonality_tests.R,outputs/analysis/analysis_dataset.csv,124
+2026-02-27 19:11:06,P4_orthogonality_tests.R,outputs/analysis/analysis_dataset.csv,124
+2026-02-27 19:12:54,P4_orthogonality_tests.R,outputs/analysis/analysis_dataset.csv,124
+2026-02-27 20:08:57,P4_orthogonality_tests.R,outputs/analysis/analysis_dataset.csv,124
+2026-02-27 21:35:26,P2_generate_crossings.R,data/processed/crossings/crossings.gpkg,124
+2026-02-27 21:40:02,P3A_hydro_covariates.R,outputs/covariates/hydro_covariates.csv,124
+2026-02-27 21:40:30,P4_orthogonality_tests.R,outputs/analysis/analysis_dataset.csv,124
